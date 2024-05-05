@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "知识与学问"
+description: "明理精工"
 ---
 
 {% for post in paginator.posts %}
@@ -18,7 +18,7 @@ description: "知识与学问"
             {{ post.content | strip_html | truncate:150 }}
         </div>
     </a>
-    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">{{ post.date | date: "%m %-d, %Y" }}</p>
 </div>
 
 <hr>
