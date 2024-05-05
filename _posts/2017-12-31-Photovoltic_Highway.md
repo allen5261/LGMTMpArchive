@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blank
 title: 我国首段承载式光伏高速公路建成通车
 date: 2017-12-31
 categories: blog
