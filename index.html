@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "明理精工"
+description: "永念冬时"
 ---
 
 {% for post in paginator.posts %}
@@ -18,7 +18,7 @@ description: "明理精工"
             {{ post.content | strip_html | truncate:150 }}
         </div>
     </a>
-    <p class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</p>
+    <p class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日" }}</p>
 </div>
 
 <hr>
