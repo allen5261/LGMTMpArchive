@@ -5,30 +5,20 @@ description: "永念冬时"
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    <table style="width: 100%;" border="0">
-        <tbody>
-            <tr>
-                <td style="width: 20%;"><img  width="100%" src="https://raw.githubusercontent.com/allen5261/MPArchive/main/_posts/%E5%9B%BE%E7%89%87/青岛二中理工MT_{{ post.date | date: "%Y-%m-%d_" }}{{ post.title }}/封面图片.png" alt="My alt text" /></td>
-                <td style="width: 80%;">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title">
-                            {{ post.title }}
-                        </h2>
-                        {% if post.subtitle %}
-                        <h3 class="post-subtitle">
-                            {{ post.subtitle }}
-                        </h3>
-                        {% endif %}
-                        <div class="post-content-preview">
-                            {{ post.content | strip_html | truncate:150 }}
-                        </div>
-                        <p class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日" }}</p>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:150 }}
+        </div>
+    </a>
+    <p class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日" }}</p>
 </div>
 
 <hr>
