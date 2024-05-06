@@ -13,7 +13,7 @@ header-img: "img/semantic.jpg"
     {% assign year = y %}
     <h4>{{ y }}</h4>
   {% endif %}
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }} · </time>
+    <time style="font-family: monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }} · </time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br> 
 {% endfor %}
 </ul>
