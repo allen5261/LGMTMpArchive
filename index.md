@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "文章索引"
-description: "文章归档"
+description: "青岛二中2018级理工MT"
 header-img: "img/semantic.jpg"
 ---
 
@@ -13,7 +13,7 @@ header-img: "img/semantic.jpg"
     {% assign year = y %}
     <h4>{{ y }}</h4>
   {% endif %}
-    <time style="font-family: monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }} · </time>
+    <time style="font-family: Courier New, monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }} · </time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br> 
 {% endfor %}
 </ul>
