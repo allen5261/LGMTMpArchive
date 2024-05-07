@@ -9,7 +9,7 @@ header-img: "img/semantic.jpg"
 <tbody>
 {% for post in site.posts %}
 <tr>
-<td style="width: auto;"><time style="font-weight: bolder; font-family: Courier New, monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></td>
+<td style="width: 7.5em; text-align: right;"><time style="font-weight: bolder; font-family: Courier New, monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></td>
 <td><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a></td>
 </tr>
 {% endfor %}
