@@ -17,7 +17,7 @@ header-img: "img/semantic.jpg"
 <tbody>
 <tr>
 <td><time style="font-weight: bolder; font-family: Courier New, monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }} · </time></td>
-<td><div><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a></td>
+<td><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a></td>
 </tr>
 </tbody>
 </table>
