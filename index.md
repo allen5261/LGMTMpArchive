@@ -14,6 +14,6 @@ header-img: "img/semantic.jpg"
     <h4>{{ y }}</h4>
   {% endif %}
     <time style="font-weight: bolder; font-family: Courier New, monospace" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }} · </time>
-    <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a><br> 
+    <div><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a></div><br> 
 {% endfor %}
 </ul>
